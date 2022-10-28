@@ -60,6 +60,10 @@
     justify-content: center;
 }
 
+.btn:hover {
+    color: white;
+}
+
 .btn:active {
     transition: all ease-in 100ms;
     transform: scale(0.9);

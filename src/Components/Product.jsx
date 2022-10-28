@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { BsFillCartPlusFill, BsFillCartDashFill } from "react-icons/bs";
 
 function Product({ product, handleAdd, handleRemove }) {
   const { name, price, img } = product;
@@ -24,11 +23,11 @@ function Product({ product, handleAdd, handleRemove }) {
       <div className="buttons">
         {added ? (
           <button className="btn btn-remove" onClick={handleClickRemove}>
-            <BsFillCartDashFill />
+            <i className="bi bi-cart-dash-fill icon-"></i>
           </button>
         ) : (
           <button className="btn btn-add" onClick={handleClickAdd}>
-            <BsFillCartPlusFill />
+            <i className="bi bi-cart-plus-fill icon"></i>
           </button>
         )}
       </div>
